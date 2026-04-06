@@ -58,11 +58,11 @@ const Hero: React.FC = () => {
       </div>
 
       {/* ── CONTENT ── */}
-      <div style={{ position: 'relative', zIndex: 1, maxWidth: '1280px', margin: '0 auto', padding: '8rem 2rem 6rem', width: '100%' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
+      <div className="hero-grid" style={{ position: 'relative', zIndex: 1, maxWidth: '1280px', margin: '0 auto', padding: '8rem 2rem 6rem', width: '100%' }}>
+        <div className="hero-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
 
-          {/* ── LEFT COLUMN — TEXT ── */}
           <motion.div
+            className="hero-text"
             variants={container}
             initial="hidden"
             animate="show"
@@ -87,7 +87,7 @@ const Hero: React.FC = () => {
             </motion.div>
 
             {/* Headline */}
-            <motion.h1 variants={fadeUp} style={{
+            <motion.h1 className="hero-text" variants={fadeUp} style={{
               fontSize: 'clamp(2.6rem, 4.5vw, 4.2rem)',
               fontWeight: 900, lineHeight: 1.08, margin: 0,
               color: '#ffffff',
@@ -180,7 +180,7 @@ const Hero: React.FC = () => {
             </motion.div>
 
             {/* Stats */}
-            <motion.div variants={fadeUp} style={{
+            <motion.div className="hero-stats" variants={fadeUp} style={{
               display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem',
               paddingTop: '1.5rem',
               borderTop: '1px solid rgba(255,255,255,0.12)',
@@ -202,8 +202,8 @@ const Hero: React.FC = () => {
             </motion.div>
           </motion.div>
 
-          {/* ── RIGHT COLUMN — PATIENT IMAGE ── */}
           <motion.div
+            className="hero-image-col"
             variants={fadeRight}
             initial="hidden"
             animate="show"

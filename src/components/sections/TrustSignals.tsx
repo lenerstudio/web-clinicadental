@@ -38,7 +38,7 @@ const TrustSignals: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="trust-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {signals.map((signal, index) => (
             <motion.div
               key={index}

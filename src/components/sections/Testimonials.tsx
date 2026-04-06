@@ -52,7 +52,7 @@ const Testimonials: React.FC = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div className="testimonials-grid grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {testimonials.map((t, index) => (
             <motion.div
               key={index}

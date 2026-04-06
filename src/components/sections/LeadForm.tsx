@@ -46,7 +46,7 @@ const LeadForm: React.FC = () => {
   return (
     <section id="lead-form" style={{ background: 'linear-gradient(180deg, #ffffff 0%, #f0f4ff 100%)', padding: '5rem 0' }}>
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        <div className="form-layout grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
           {/* Left: Benefits + Social Proof */}
           <motion.div
@@ -164,7 +164,7 @@ const LeadForm: React.FC = () => {
                     {errors.nombre && <p className="text-xs font-bold mt-1" style={{ color: '#ef4444' }} role="alert">{errors.nombre.message}</p>}
                   </div>
 
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                  <div className="form-fields-row" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                     <div>
                       <label className="block text-sm font-bold mb-2" style={{ color: '#374151' }}>Teléfono *</label>
                       <input {...register('telefono')} type="tel" placeholder="+34 600 000 000" style={inputClass(!!errors.telefono)} />

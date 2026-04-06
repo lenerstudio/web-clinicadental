@@ -34,7 +34,7 @@ const Solution: React.FC = () => {
   const [ref, isVisible] = useIntersection();
 
   return (
-    <section id="solucion" ref={ref} style={{ background: '#f8faff', padding: '5rem 0' }}>
+    <section id="solucion" ref={ref} className="section-responsive" style={{ background: '#f8faff', padding: '5rem 0' }}>
       <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 2rem' }}>
 
         {/* Header */}
@@ -67,8 +67,7 @@ const Solution: React.FC = () => {
           </p>
         </motion.div>
 
-        {/* Steps grid — 2×2 */}
-        <div style={{
+        <div className="solution-grid" style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(2, 1fr)',
           gap: '1.5rem',
