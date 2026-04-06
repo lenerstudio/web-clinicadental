@@ -97,7 +97,7 @@ const LeadForm: React.FC = () => {
 
             {/* Direct call CTA */}
             <a
-              href="tel:+34912345678"
+              href="tel:+52912345678"
               className="mt-6 flex items-center gap-4 p-4 rounded-2xl transition-all hover:scale-105"
               style={{ background: 'white', border: '2px solid #e5e7eb', textDecoration: 'none', display: 'flex' }}
             >
@@ -167,7 +167,7 @@ const LeadForm: React.FC = () => {
                   <div className="form-fields-row" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                     <div>
                       <label className="block text-sm font-bold mb-2" style={{ color: '#374151' }}>Teléfono *</label>
-                      <input {...register('telefono')} type="tel" placeholder="+34 600 000 000" style={inputClass(!!errors.telefono)} />
+                      <input {...register('telefono')} type="tel" placeholder="+52 600 000 000" style={inputClass(!!errors.telefono)} />
                       {errors.telefono && <p className="text-xs font-bold mt-1" style={{ color: '#ef4444' }} role="alert">{errors.telefono.message}</p>}
                     </div>
                     <div>

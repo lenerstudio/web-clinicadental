@@ -66,7 +66,7 @@ const Header: React.FC = () => {
             boxShadow: '0 4px 12px rgba(26,92,255,0.35)',
           }}>
             <svg viewBox="0 0 24 24" fill="white" style={{ width: '20px', height: '20px' }}>
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7z"/>
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7z" />
             </svg>
           </div>
           <span style={{
@@ -105,7 +105,7 @@ const Header: React.FC = () => {
 
         {/* Desktop right side */}
         <motion.div className="desktop-right" variants={item} style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-          <a href="tel:+34912345678" style={{
+          <a href="tel:+52912345678" style={{
             display: 'flex', alignItems: 'center', gap: '6px',
             color: isScrolled ? '#111827' : 'rgba(255,255,255,0.9)',
             fontWeight: 700, fontSize: '0.9rem', textDecoration: 'none',
@@ -171,7 +171,7 @@ const Header: React.FC = () => {
                   {link.label}
                 </button>
               ))}
-              <a href="tel:+34912345678" style={{
+              <a href="tel:+52912345678" style={{
                 display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px',
                 padding: '14px', borderRadius: '12px', marginTop: '0.5rem',
                 border: '2px solid #e2e8f0', color: '#111827', fontWeight: 700,

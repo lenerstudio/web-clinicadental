@@ -140,7 +140,7 @@ const Hero: React.FC = () => {
               </motion.button>
 
               <motion.a
-                href="tel:+34912345678"
+                href="tel:+52912345678"
                 whileHover={{ scale: 1.04, background: 'rgba(255,255,255,0.2)' }}
                 whileTap={{ scale: 0.97 }}
                 style={{

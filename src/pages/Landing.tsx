@@ -45,7 +45,7 @@ const Landing: React.FC = () => {
             "name": "Clínica Dental Sonrisa Real",
             "image": ogImageUrl,
             "url": canonicalUrl,
-            "telephone": "+34912345678",
+            "telephone": "+52912345678",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Calle de la Salud 123",

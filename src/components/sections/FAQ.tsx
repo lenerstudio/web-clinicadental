@@ -79,9 +79,9 @@ const FAQ: React.FC = () => {
           <Accordion items={faqData} />
         </motion.div>
 
-        <div className="mt-16 text-center">
+        <div className="m-10 text-center">
           <p className="text-neutral-600 italic">
-            ¿Tienes alguna otra duda? <a href="#lead-form" className="text-primary font-bold hover:underline">Escríbenos directamente</a> o llama al <a href="tel:+34912345678" className="text-primary font-bold hover:underline">912 345 678</a>.
+            ¿Tienes alguna otra duda? <a href="#lead-form" className="text-primary font-bold hover:underline">Escríbenos directamente</a> o llama al <a href="tel:+52912345678" className="text-primary font-bold hover:underline">912 345 678</a>.
           </p>
         </div>
       </div>
