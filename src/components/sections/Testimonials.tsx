@@ -9,7 +9,7 @@ const Testimonials: React.FC = () => {
   const testimonials = [
     {
       name: 'Carmen García',
-      location: 'Madrid',
+      location: 'Mexico',
       treatment: 'All-on-4 completo',
       text: 'Llevaba años ocultando mi sonrisa. En tan solo unos días recuperé no solo mis dientes, sino mis ganas de salir a comer con amigos. El trato fue inmejorable y sin dolor.',
       rating: 5,
@@ -102,7 +102,7 @@ const Testimonials: React.FC = () => {
         >
           <img
             src="/clinic-interior.png"
-            alt="Vista interior de la Clínica Dental Sonrisa Real en Madrid"
+            alt="Vista interior de la Clínica Dental Sonrisa Real en Mexico"
             className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-50 transition-opacity"
           />
           <div className="absolute inset-0 flex flex-col items-center justify-center text-white">

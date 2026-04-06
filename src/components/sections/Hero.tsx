@@ -83,7 +83,7 @@ const Hero: React.FC = () => {
               <div style={{ display: 'flex', gap: '2px' }}>
                 {[...Array(5)].map((_, i) => <Star key={i} size={12} fill="#fbbf24" color="#fbbf24" />)}
               </div>
-              <span>Clínica nº1 en Implantes • Madrid</span>
+              <span>Clínica nº1 en Implantes • Mexico</span>
             </motion.div>
 
             {/* Headline */}
@@ -224,7 +224,7 @@ const Hero: React.FC = () => {
               {!imgError ? (
                 <img
                   src="/hero-patient.png"
-                  alt="Paciente feliz tras implantes dentales en Clínica Sonrisa Real Madrid"
+                  alt="Paciente feliz tras implantes dentales en Clínica Sonrisa Real Mexico"
                   style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
                   loading="eager"
                   onError={() => setImgError(true)}

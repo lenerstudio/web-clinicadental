@@ -91,7 +91,7 @@ const LeadForm: React.FC = () => {
                   {[...Array(5)].map((_, i) => <Star key={i} size={14} color="#FFD700" fill="#FFD700" />)}
                 </div>
                 <p className="text-white font-bold text-sm">"El mejor servicio dental que he recibido"</p>
-                <p className="text-xs" style={{ color: 'rgba(255,255,255,0.7)' }}>— María López, Madrid · Implante All-on-4</p>
+                <p className="text-xs" style={{ color: 'rgba(255,255,255,0.7)' }}>— María López, Mexico · Implante All-on-4</p>
               </div>
             </div>
 
