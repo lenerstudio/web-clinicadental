@@ -52,7 +52,7 @@ const Problem: React.FC = () => {
           <h2 className="font-extrabold mb-6" style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)', color: '#111827', lineHeight: 1.2 }}>
             ¿Te reconoces en alguna de estas situaciones?
           </h2>
-          <p className="text-lg mx-auto" style={{ color: '#6b7280', maxWidth: '560px', lineHeight: 1.7 }}>
+          <p className="text-lg mx-auto" style={{ color: '#6b7280', margin: '0 auto', maxWidth: '560px', lineHeight: 1.7 }}>
             Perder un diente no es solo un problema estético; afecta a tu salud, tu confianza y tu calidad de vida diaria.
           </p>
         </motion.div>

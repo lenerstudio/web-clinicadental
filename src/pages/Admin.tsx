@@ -22,7 +22,7 @@ const Admin: React.FC = () => {
   const [password, setPassword] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
   const [filterStatus, setFilterStatus] = useState<string>('todos');
-  const { leads, updateLeadStatus, updateLeadNotes, deleteLead } = useLeads();
+  const { leads, loading, updateLeadStatus, updateLeadNotes, deleteLead, refreshLeads, isGoogleSheetsEnabled } = useLeads();
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
@@ -217,6 +217,38 @@ const Admin: React.FC = () => {
 
           {/* Right */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            {/* Connection status */}
+            <div style={{
+              display: 'flex', alignItems: 'center', gap: '6px',
+              padding: '5px 12px', borderRadius: '8px',
+              background: isGoogleSheetsEnabled ? 'rgba(34,197,94,0.08)' : 'rgba(249,115,22,0.08)',
+              border: `1px solid ${isGoogleSheetsEnabled ? 'rgba(34,197,94,0.2)' : 'rgba(249,115,22,0.2)'}`,
+            }}>
+              <div style={{
+                width: 7, height: 7, borderRadius: '50%',
+                background: isGoogleSheetsEnabled ? '#22c55e' : '#f97316',
+              }} />
+              <span style={{ fontSize: '0.7rem', fontWeight: 600, color: isGoogleSheetsEnabled ? '#16a34a' : '#c2410c' }}>
+                {isGoogleSheetsEnabled ? 'Google Sheets' : 'Local'}
+              </span>
+            </div>
+            {/* Refresh */}
+            <button
+              onClick={() => refreshLeads()}
+              disabled={loading}
+              style={{
+                display: 'flex', alignItems: 'center', gap: '4px',
+                padding: '7px 10px', borderRadius: '8px',
+                background: '#ffffff', border: '1px solid rgba(0,0,0,0.1)',
+                color: '#86868b', fontSize: '0.8rem', fontWeight: 600,
+                cursor: loading ? 'wait' : 'pointer', fontFamily: 'inherit',
+                transition: 'background 0.15s',
+                opacity: loading ? 0.5 : 1,
+              }}
+              title="Refrescar datos"
+            >
+              <svg style={{ width: 14, height: 14, animation: loading ? 'spin 1s linear infinite' : 'none' }} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12a9 9 0 11-6.219-8.56"/><polyline points="21 3 21 12 12 12"/></svg>
+            </button>
             <button
               onClick={() => exportLeadsToCSV(leads)}
               style={{

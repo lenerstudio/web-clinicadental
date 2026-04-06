@@ -111,3 +111,9 @@ img { max-width: 100%; height: auto; }
 @media (min-width: 768px) {
   .mobile-menu-btn { display: none !important; }
 }
+
+/* Spinner animation */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

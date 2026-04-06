@@ -52,7 +52,7 @@ const FAQ: React.FC = () => {
           {JSON.stringify(faqSchema)}
         </script>
       </Helmet>
-      
+
       {/* Visual background accents */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full -mr-32 -mt-32 blur-3xl" />
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent/5 rounded-full -ml-32 -mb-32 blur-3xl" />
@@ -60,29 +60,29 @@ const FAQ: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
         <div className="text-center mb-16">
           <div className="flex justify-center mb-4">
-             <HelpCircle className="text-primary opacity-20" size={56} />
+            <HelpCircle className="text-primary opacity-20" size={56} />
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-neutral-900 mb-6">
             Resolvemos tus dudas principales
           </h2>
-          <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
+          <p style={{ color: '#6b7280', maxWidth: '520px', margin: '0 auto', lineHeight: 1.7 }}>
             La información transparente es el primer paso para una decisión acertada sobre tu salud dental.
           </p>
         </div>
 
         <motion.div
-           initial={{ opacity: 0, y: 30 }}
-           whileInView={{ opacity: 1, y: 0 }}
-           viewport={{ once: true }}
-           transition={{ duration: 0.6 }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
         >
           <Accordion items={faqData} />
         </motion.div>
 
         <div className="mt-16 text-center">
-           <p className="text-neutral-600 italic">
-             ¿Tienes alguna otra duda? <a href="#lead-form" className="text-primary font-bold hover:underline">Escríbenos directamente</a> o llama al <a href="tel:+34912345678" className="text-primary font-bold hover:underline">912 345 678</a>.
-           </p>
+          <p className="text-neutral-600 italic">
+            ¿Tienes alguna otra duda? <a href="#lead-form" className="text-primary font-bold hover:underline">Escríbenos directamente</a> o llama al <a href="tel:+34912345678" className="text-primary font-bold hover:underline">912 345 678</a>.
+          </p>
         </div>
       </div>
     </section>
