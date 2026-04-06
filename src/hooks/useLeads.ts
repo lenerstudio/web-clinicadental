@@ -15,8 +15,6 @@ async function sheetsPost(data: Record<string, unknown>): Promise<boolean> {
 
   try {
     // Build the URL with the action as a query param for Apps Script
-    const url = new URL(SHEETS_URL);
-
     // Use fetch with redirect:follow and no custom headers to avoid CORS preflight
     const res = await fetch(SHEETS_URL, {
       method: 'POST',
