@@ -59,25 +59,19 @@ const Header: React.FC = () => {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer' }}
         >
-          <div style={{
-            width: '36px', height: '36px', borderRadius: '10px',
-            background: 'linear-gradient(135deg, #1a5cff, #0d3db5)',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            boxShadow: '0 4px 12px rgba(26,92,255,0.35)',
-          }}>
-            <svg viewBox="0 0 24 24" fill="white" style={{ width: '20px', height: '20px' }}>
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7z" />
-            </svg>
-          </div>
-          <span style={{
-            fontWeight: 900, fontSize: '1.2rem',
-            color: isScrolled ? '#0f172a' : '#ffffff',
-            letterSpacing: '-0.02em',
-            transition: 'color 0.35s ease',
-            textShadow: isScrolled ? 'none' : '0 1px 8px rgba(0,0,0,0.3)',
-          }}>
-            Sonrisa<span style={{ color: '#1a5cff', fontStyle: 'italic' }}>Real</span>
-          </span>
+          <img
+            src="/logo-clinica.png"
+            alt="Clínica Dental - Logo"
+            style={{
+              height: isScrolled ? '45px' : '50px',
+              width: 'auto',
+              objectFit: 'contain',
+              transition: 'height 0.35s ease, filter 0.35s ease',
+              filter: isScrolled
+                ? 'none'
+                : 'drop-shadow(0 1px 6px rgba(0,0,0,0.35)) brightness(1.1)',
+            }}
+          />
         </motion.div>
 
         {/* Desktop nav */}
